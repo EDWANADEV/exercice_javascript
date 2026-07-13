@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/src/output.css" rel="stylesheet" />
+  </head>
+  <body class="bg-white">
+    <h1 class="text-center text-4xl font-bold">
+      <span class="text-blue-500"> Exercice</span>
+      <span class="text-blue-700">DOM</span>
+      <span class="text-purple-500">Interactif</span>
+    </h1>
+
+    <div class="main flex flex-col g-5 text-[25px] mt-7">
+      <div class="contain h[12vh]">
+        <ul>
+          <li class="text-purple-500" id="bold">
+            <span class="text-blue-500">Sélection</span> du paragraphe à
+            modifier:
+          </li>
+        </ul>
+        <p class="flex flex-row justify-between" id="change_bg">
+         <span id="sentence"> Ceci est un paragraphe à modifier</span>
+          <button class="btn text-white bg-purple-600" id="modify">Modifier le texte</button>
+        </p>
+      </div>
+      <div class="contain h[12vh]">
+        <ul>
+          <li class="text-blue-500">Sélection du bouton à modifier:</li>
+        </ul>
+        <div class="bg-gray-200 flex flex-row justify-between">
+          <button class="btn bg-blue-500 text-white btn_0">Bouton de test</button>
+          <span class="btn bg-blue-500 text-white" id="change_color"> Changer de couleur </span>
+        </div>
+      </div>
+      <div class="contain h[12vh]">
+        <ul>
+          <li class="text-blue-500">Image à modifier</li>
+        </ul>
+        <div class="flex flex-row justify-between">
+          <img
+            src="/src/image/image_nature1.png"
+            alt=""
+            class="w-[20%] h-[30vh]"
+          />
+          <span class="btn bg-white text-blue-500 mt-14" id="change">Changer d'image</span>
+        </div>
+      </div>
+    </div>
+    <script src="/Niveau_debutant/index.js"></script>
+  </body>
+</html>
